@@ -325,6 +325,8 @@ select option { color: #0A0A0A; }
   .values-grid { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 2.2rem; }
+  .hero-btns { flex-direction: column; width: 100%; gap: 1rem; }
+  .hero-btns button { width: 100%; justify-content: center; }
   
   /* Opti Mobile Equipe */
   .team-member { padding: 3rem 1.5rem; min-height: auto; }
