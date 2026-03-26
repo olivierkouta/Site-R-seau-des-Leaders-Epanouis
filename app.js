@@ -510,41 +510,8 @@ function donationHTML() {
           <p>"En soutenant notre réseau, vous contribuez à bâtir une communauté de leaders engagés, inspirés et prêts à faire une différence."</p>
         </div>
       </div>
-      <div class="donation-form-wrap" id="donation-form-area">
-        <form onsubmit="submitDonation(event)">
-          <div class="form-group">
-            <label>Montant du don ($)</label>
-            <input class="amount-input" type="number" required placeholder="50" min="1"/>
-          </div>
-          <div class="form-grid">
-            <div class="form-group">
-              <label>Nom complet</label>
-              <input type="text" required/>
-            </div>
-            <div class="form-group">
-              <label>Adresse courriel</label>
-              <input type="email" required/>
-            </div>
-          </div>
-          <div style="border-top:1px solid rgba(0,0,0,.05);padding-top:2rem;margin-top:1rem">
-            <div class="secure-label">💳 Paiement Sécurisé</div>
-            <div class="form-group">
-              <label>Numéro de carte</label>
-              <input required placeholder="0000 0000 0000 0000" style="font-family:monospace"/>
-            </div>
-            <div class="form-grid">
-              <div class="form-group">
-                <label>Expiration (MM/YY)</label>
-                <input required placeholder="01/28"/>
-              </div>
-              <div class="form-group">
-                <label>CVV</label>
-                <input required placeholder="123"/>
-              </div>
-            </div>
-          </div>
-          <button type="submit" class="btn-don-submit">Confirmer le don &nbsp;🤲</button>
-        </form>
+      <div class="donation-form-wrap" id="donation-form-area" style="padding: 1rem;">
+        <div style="position:relative;overflow:hidden;height:650px;width:100%;"><iframe title='Donation form powered by Zeffy' style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%' src='https://www.zeffy.com/embed/donation-form/support-our-mission-110' allowpaymentrequest allowTransparency="true"></iframe></div>
       </div>
     </div>
   </section>
