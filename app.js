@@ -12,7 +12,7 @@ const team = [
   {
     id: "eliezer", name: "Eliezer Dikiefu",
     role: "Vice-Président et Cofondateur",
-    org: "Réseau des Leaders Épanouis (RLE)",
+    org: "Fulfilled Leaders Network (FLN) / Réseau des Leaders Épanouis (RLE)",
     desc: "Eliezer joue un rôle déterminant dans la structuration stratégique et le développement institutionnel de l'organisation. Reconnu pour son leadership visionnaire et sa capacité à bâtir des initiatives à fort impact, il contribue activement à la croissance et au positionnement du réseau comme une plateforme influente de formation et de mobilisation des leaders. Animé par une foi profonde, un engagement envers l'excellence et une quête constante de connaissance, Eliezer place le développement continu et les valeurs humaines au cœur de son leadership. Sa vision est de construire un réseau solide, structuré et pérenne, capable d'influencer durablement la société.",
     img: "Photos RLE/Eliezer Final.png",
     isPortrait: true,
