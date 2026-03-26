@@ -213,7 +213,7 @@ footer p { font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; co
 .program-text h2 { font-size: clamp(1.5rem,3vw,2.5rem); font-family: 'Playfair Display', serif; font-weight: 700; color: #B38B59; text-transform: uppercase; margin-bottom: 1.5rem; }
 .program-text p { font-size: 1.05rem; color: rgba(0,0,0,.7); font-weight: 300; line-height: 1.8; }
 .program-img-wrap { aspect-ratio: 16/9; overflow: hidden; box-shadow: 0 25px 60px rgba(0,0,0,.15); }
-.program-img-wrap img { width: 100%; height: 100%; object-fit: cover; background: #fff; transition: all .3s; }
+.program-img-wrap img { width: 100%; height: 100%; object-fit: cover; background: #fff; transition: all .3s; filter: grayscale(100%); }
 
 .btn-youtube {
   display: inline-flex;
