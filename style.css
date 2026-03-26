@@ -316,7 +316,7 @@ select option { color: #0A0A0A; }
 
 /* ========= RESPONSIVE ========= */
 @media (max-width: 900px) {
-  .about-who-inner, .about-mission-inner, .cta-inner, .contact-inner, .donation-inner, .program-inner, .team-inner { grid-template-columns: 1fr; }
+  .about-who-inner, .about-mission-inner, .cta-inner, .contact-inner, .donation-inner, .program-inner, .program-inner.reverse, .team-inner, .team-inner.reverse { grid-template-columns: 1fr; }
   .cta-box, .program-inner.reverse .program-text, .program-inner.reverse .program-img-wrap, .team-inner.reverse .member-photo-wrap, .team-inner.reverse .member-info { order: unset; }
   .values-grid { grid-template-columns: repeat(2,1fr); }
   .btn-don-nav { display: none; }
@@ -325,4 +325,9 @@ select option { color: #0A0A0A; }
   .values-grid { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 2.2rem; }
+  
+  /* Opti Mobile Equipe */
+  .team-member { padding: 3rem 1.5rem; min-height: auto; }
+  .member-photo { aspect-ratio: 1/1; max-height: 400px; }
+  .member-name { font-size: clamp(2rem, 8vw, 2.5rem); }
 }
