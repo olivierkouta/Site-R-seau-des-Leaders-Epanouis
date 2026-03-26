@@ -103,7 +103,7 @@ const values = [
 const programs = [
   {
     icon: "📊", title: "Ateliers",
-    img: "Photos RLE/prog_ateliers.png",
+    img: "Photos RLE/Atelier.png",
     desc: "Organisation d’ateliers interactifs et stratégiques centrés sur l'incubation de projets à fort impact. Nos interventions préparent les leaders à excaver leur potentiel dans quatre sphères clés de transformation : économique, politique, professionnelle et sociale."
   },
   {
