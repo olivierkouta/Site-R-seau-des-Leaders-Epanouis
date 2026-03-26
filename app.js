@@ -21,7 +21,7 @@ const team = [
   {
     id: "tensia", name: "Tensia Molisho",
     role: "Directrice Financière et Co-fondatrice",
-    org: "FLN / Réseau des Leaders Épanouis (RLE)",
+    org: "Fulfilled Leaders Network (FLN) / Réseau des Leaders Épanouis (RLE)",
     desc: "Tensia Molisho assure la structuration financière et le développement durable de l'organisation. En tant que membre fondatrice, elle contribue activement à la vision et à la consolidation institutionnelle du réseau. Passionnée par le développement personnel et l'intelligence émotionnelle, elle incarne un leadership conscient, aligné sur des valeurs d'intégrité, de croissance et d'impact. Elle contribue à bâtir une organisation solide, résiliente et orientée vers la transformation des individus et des communautés. Par son engagement, elle joue un rôle essentiel dans la construction et le rayonnement du FLN/RLE, contribuant à propulser une nouvelle génération de leaders.",
     img: "Photos RLE/tensia_official.png",
     isPortrait: true,
@@ -30,7 +30,7 @@ const team = [
   {
     id: "marie", name: "Marie-Reine Ntabala",
     role: "Directrice Stratégique des Médias & Co-fondatrice",
-    org: "Réseau des Leaders Épanouis (RLE)",
+    org: "Fulfilled Leaders Network (FLN) / Réseau des Leaders Épanouis (RLE)",
     desc: "Membre fondatrice, Marie-Reine joue un rôle déterminant dans la construction, le positionnement et le rayonnement institutionnel du réseau. Elle dirige l'élaboration et la mise en œuvre des stratégies médiatiques et marketing, en veillant à la cohérence de l'image de marque et à la visibilité de l'organisation à travers ses différentes plateformes et initiatives. Dotée d'une vision stratégique, d'un sens aigu de la communication et d'un engagement profond envers l'impact social, elle contribue à bâtir une identité forte, crédible et inspirante pour l'organisation.",
     img: "Photos RLE/marie_official.png",
     isPortrait: true,
@@ -39,7 +39,7 @@ const team = [
   {
     id: "sephora", name: "Sephora Ilunga",
     role: "Directrice Marketing et Événements",
-    org: "FLN / Réseau des Leaders Épanouis (RLE)",
+    org: "Fulfilled Leaders Network (FLN) / Réseau des Leaders Épanouis (RLE)",
     desc: "Sephora transforme les idées en expériences percutantes et les initiatives du réseau en véritables moments de connexion et d'inspiration. Bilingue et passionnée, elle combine expertise en gestion de projets et stratégie marketing pour amplifier l'impact et la visibilité du réseau. Elle a su insuffler énergie et innovation dans la planification et l'exécution des activités, tout en assurant une communication fluide avec les partenaires. Son sens du détail permet de transformer chaque projet en réussite tangible et mémorable. Elle contribue à faire du FLN/RLE une plateforme vibrante et inspirante.",
     img: "Photos RLE/Image Finale Séphora.jpg",
     isPortrait: true,
@@ -48,7 +48,7 @@ const team = [
   {
     id: "urielle", name: "Urielle Katende",
     role: "Éditrice en Chef - Contenu & Réseaux Sociaux",
-    org: "Réseau des Leaders Épanouis (RLE)",
+    org: "Fulfilled Leaders Network (FLN) / Réseau des Leaders Épanouis (RLE)",
     desc: "Urielle joue un rôle central dans la création, la supervision et la diffusion de contenus stratégiques qui renforcent la visibilité du réseau. Spécialiste du contenu numérique et passionnée par la communication engageante, elle coordonne les campagnes multimédias, développe la présence du réseau sur les plateformes sociales et veille à ce que chaque message reflète fidèlement la mission et les valeurs de l'organisation. Grâce à sa créativité et son sens de l'innovation, elle contribue à mobiliser et connecter une nouvelle génération de leaders épanouis à travers le Canada.",
     img: "Photos RLE/Image Finale Urielle.jpg",
     isPortrait: true,
@@ -57,7 +57,7 @@ const team = [
   {
     id: "nanouche", name: "Nanouche Mulaj",
     role: "Secrétaire Générale",
-    org: "FLN / Réseau des Leaders Épanouis (RLE)",
+    org: "Fulfilled Leaders Network (FLN) / Réseau des Leaders Épanouis (RLE)",
     desc: "Nanouche assure un rôle clé dans la coordination administrative, la gouvernance organisationnelle et la continuité des opérations stratégiques. Forte d'une expérience en administration et en logistique événementielle, elle a contribué à la mise en œuvre d'initiatives structurantes, notamment la Conférence Oser Briller. Son expertise lui permet de garantir l'efficacité des processus administratifs et de soutenir le bon fonctionnement des instances dirigeantes. Reconnue pour sa rigueur et son professionnalisme, elle joue un rôle essentiel dans le renforcement de la structure du réseau.",
     img: "Photos RLE/nanoushe final.png",
     isPortrait: true,
