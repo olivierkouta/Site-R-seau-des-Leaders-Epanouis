@@ -328,6 +328,11 @@ select option { color: #0A0A0A; }
   .hero-btns { flex-direction: column; width: 100%; gap: 1rem; }
   .hero-btns button { width: 100%; justify-content: center; }
   
+  /* Opti Mobile News */
+  .news-section { min-height: 55vh; }
+  .news-inner { padding: 3rem 1.5rem; }
+  .news-bg { background-position: center top !important; background-size: cover !important; }
+
   /* Opti Mobile Equipe */
   .team-member { padding: 3rem 1.5rem; min-height: auto; }
   .member-photo { aspect-ratio: 1/1; max-height: 400px; }
