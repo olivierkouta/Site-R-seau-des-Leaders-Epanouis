@@ -238,7 +238,8 @@ function homeHTML() {
     <div class="hero-inner">
       <p class="hero-eyebrow">ÉVEILLER • INSPIRER • DIRIGER</p>
       <h1 class="hero-title">
-        Bienvenue au Cœur de <br class="desktop-br"><em>notre Réseau</em>
+        Bienvenue au Cœur <span class="desktop-only">de</span><br class="desktop-br">
+        <span class="mobile-de">de </span><em>notre Réseau</em>
       </h1>
       <p class="hero-description">
         Explorez nos activités marquantes et suivez les prochaines initiatives qui façonnent notre communauté.
