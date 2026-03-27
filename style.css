@@ -323,9 +323,10 @@ select option { color: #0A0A0A; }
 }
 @media (max-width: 560px) {
   .logo-text { font-size: 0.72rem; letter-spacing: 0.05em; padding-left: 0.4rem; margin-left: 0.4rem; }
+  .desktop-br { display: none; }
+  .hero-title { font-size: 2.1rem; }
+  .hero-eyebrow { font-size: 0.5rem; letter-spacing: 0.3em; margin-bottom: 2rem; }
   .values-grid { grid-template-columns: 1fr; }
-  .form-grid { grid-template-columns: 1fr; }
-  .hero-title { font-size: 2.2rem; }
   .hero-ctas { flex-direction: column; width: 100%; gap: 1rem; }
   .hero-ctas button { width: 100%; justify-content: center; }
   
