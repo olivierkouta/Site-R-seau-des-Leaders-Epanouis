@@ -96,7 +96,6 @@ footer p { font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; co
 .btn-primary:hover { background: #fff; color: #0A0A0A; }
 .btn-outline { padding: 1.25rem 3rem; font-size: .68rem; font-weight: 700; text-transform: uppercase; border: 1px solid rgba(255,255,255,.2); color: #fff; letter-spacing: .05em; transition: all .3s; }
 .btn-outline:hover { background: rgba(255,255,255,.1); }
-.mobile-de { display: none; }
 
 /* News Slider */
 .news-section { position: relative; background: #0A0A0A; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; border-top: 1px solid rgba(255,255,255,.05); }
@@ -324,9 +323,7 @@ select option { color: #0A0A0A; }
 }
 @media (max-width: 560px) {
   .logo-text { font-size: 0.72rem; letter-spacing: 0.05em; padding-left: 0.4rem; margin-left: 0.4rem; }
-  .desktop-br, .desktop-only { display: none; }
-  .mobile-de { display: inline; }
-  .hero-title { font-size: 2.1rem; }
+  .hero-title { font-size: 1.8rem; }
   .hero-eyebrow { font-size: 0.5rem; letter-spacing: 0.3em; margin-bottom: 2rem; }
   .values-grid { grid-template-columns: 1fr; }
   .hero-ctas { flex-direction: column; width: 100%; gap: 1rem; }
