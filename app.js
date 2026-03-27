@@ -453,26 +453,26 @@ function contactHTML() {
           <div class="form-grid">
             <div class="form-group">
               <label>Nom complet</label>
-              <input type="text" required placeholder=""/>
+              <input type="text" name="Nom" required placeholder=""/>
             </div>
             <div class="form-group">
               <label>Adresse courriel</label>
-              <input type="email" required placeholder=""/>
+              <input type="email" name="Email" required placeholder=""/>
             </div>
           </div>
           <div class="form-group">
             <label>Objet</label>
-            <select required>
+            <select name="Objet" required>
               <option value="">Sélectionner</option>
-              <option value="p">Partenariat</option>
-              <option value="po">Podcast</option>
-              <option value="pu">Publicité</option>
-              <option value="a">Autre</option>
+              <option value="Partenariat">Partenariat</option>
+              <option value="Podcast">Podcast</option>
+              <option value="Publicité">Publicité</option>
+              <option value="Autre">Autre</option>
             </select>
           </div>
           <div class="form-group">
             <label>Message</label>
-            <textarea rows="4" required placeholder="Décrivez votre projet..."></textarea>
+            <textarea name="Message" rows="4" required placeholder="Décrivez votre projet..."></textarea>
           </div>
           <button type="submit" class="btn-submit">Envoyer la demande &nbsp;✈</button>
         </form>
@@ -484,12 +484,41 @@ function contactHTML() {
 
 function submitContact(e) {
   e.preventDefault();
-  document.getElementById('contact-form-area').innerHTML = `
-    <div class="success-msg">
-      <div class="tick">✓</div>
-      <h2>Message envoyé.</h2>
-      <p>Notre équipe vous contactera prochainement.</p>
-    </div>`;
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
+  const ogText = btn.innerHTML;
+  btn.innerHTML = 'Envoi...';
+  btn.disabled = true;
+
+  fetch("https://formsubmit.co/ajax/olivierkouta@gmail.com", {
+      method: "POST",
+      headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+          Nom: form.querySelector('input[name="Nom"]').value,
+          Email: form.querySelector('input[name="Email"]').value,
+          Objet: form.querySelector('select[name="Objet"]').value,
+          Message: form.querySelector('textarea[name="Message"]').value,
+          _subject: "Nouveau message depuis le site RLE!"
+      })
+  })
+  .then(response => response.json())
+  .then(data => {
+      document.getElementById('contact-form-area').innerHTML = `
+        <div class="success-msg">
+          <div class="tick">✓</div>
+          <h2>Message envoyé.</h2>
+          <p>Notre équipe vous contactera. (IMPORTANT: Vérifiez olivierkouta@gmail.com pour activer le relais lors du 1er test).</p>
+        </div>`;
+  })
+  .catch(error => {
+      console.log(error);
+      btn.innerHTML = ogText;
+      btn.disabled = false;
+      alert("Une erreur de réseau est survenue. Veuillez réessayer.");
+  });
 }
 
 // ========= DONATION =========
