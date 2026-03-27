@@ -490,7 +490,7 @@ function submitContact(e) {
   btn.innerHTML = 'Envoi...';
   btn.disabled = true;
 
-  fetch("https://formsubmit.co/ajax/olivierkouta@gmail.com", {
+  fetch("https://formsubmit.co/ajax/Contact@rlefln.com", {
       method: "POST",
       headers: { 
           'Content-Type': 'application/json',
@@ -510,7 +510,7 @@ function submitContact(e) {
         <div class="success-msg">
           <div class="tick">✓</div>
           <h2>Message envoyé.</h2>
-          <p>Notre équipe vous contactera. (IMPORTANT: Vérifiez olivierkouta@gmail.com pour activer le relais lors du 1er test).</p>
+          <p>Notre équipe vous contactera. (IMPORTANT: Vérifiez Contact@rlefln.com pour activer le relais lors du 1er test).</p>
         </div>`;
   })
   .catch(error => {
