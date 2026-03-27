@@ -322,7 +322,7 @@ select option { color: #0A0A0A; }
   .btn-don-nav { display: none; }
 }
 @media (max-width: 560px) {
-  .logo-text { font-size: 0.6rem; letter-spacing: 0.1em; padding-left: 0.5rem; margin-left: 0.5rem; }
+  .logo-text { font-size: 0.72rem; letter-spacing: 0.05em; padding-left: 0.4rem; margin-left: 0.4rem; }
   .values-grid { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 2.2rem; }
