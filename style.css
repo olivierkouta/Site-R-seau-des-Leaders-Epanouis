@@ -339,3 +339,14 @@ select option { color: #0A0A0A; }
   .member-photo { aspect-ratio: 1/1; max-height: 400px; }
   .member-name { font-size: clamp(2rem, 8vw, 2.5rem); }
 }
+
+/* Gold Text Slide */
+.news-bg.gold-text-slide {
+  background-color: #000000 !important;
+}
+.gold-text-slide .news-headline {
+  color: #B38B59 !important;
+}
+.gold-text-slide .news-desc {
+  color: rgba(179, 139, 89, 0.8) !important;
+}

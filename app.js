@@ -76,7 +76,8 @@ const newsSlides = [
     date: "OCTOBRE 2026", tag: "CONFÉRENCE",
     title: "Oser Briller – 2ᵉ édition",
     desc: "Détails à venir !",
-    img: "Photos RLE/Conférence.jpg"
+    img: "",
+    bgClass: "gold-text-slide"
   }
 ];
 
