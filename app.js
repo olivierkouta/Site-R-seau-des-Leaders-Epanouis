@@ -59,12 +59,6 @@ const team = [
 
 const newsSlides = [
   {
-    date: "28 MARS 2026", tag: "CONFÉRENCE",
-    title: "Femmes au cœur du changement",
-    desc: "Une conférence inspirante dédiée au leadership féminin et à l'impact des femmes dans nos communautés.",
-    img: "Photos RLE/actualité.png"
-  },
-  {
     date: "", tag: "CITATION",
     title: "Le courage ne rugit pas toujours. Parfois, le courage est la petite voix à la fin de la journée qui dit : ‘Je réessaierai demain.’",
     desc: "Mary Anne Radmacher",
