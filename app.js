@@ -304,14 +304,9 @@ function aboutHTML() {
 
   <section class="about-who">
     <div class="about-who-inner">
-      <div>
-        <h2>Qui sommes-nous</h2>
-        <p>Le <strong>Réseau des Leaders Épanouis</strong> est un groupe de jeunes visionnaires basé à Ottawa, unis par la vision de promouvoir une idéologie de leadership capable de façonner et d'influencer la société grâce à la connaissance, à la sagesse et à la passion des individus.</p>
-        <p>Le réseau vise à créer un environnement propice à l'épanouissement personnel et professionnel, en offrant des opportunités d'apprentissage, de partage et de développement du leadership.</p>
-      </div>
-      <div>
-        <img class="about-img" src="Photos RLE/O.jpg" alt="Leadership Ottawa"/>
-      </div>
+      <h2>Qui sommes-nous</h2>
+      <p>Le <strong>Réseau des Leaders Épanouis</strong> est un groupe de jeunes visionnaires basé à Ottawa, unis par la vision de promouvoir une idéologie de leadership capable de façonner et d'influencer la société grâce à la connaissance, à la sagesse et à la passion des individus.</p>
+      <p>Le réseau vise à créer un environnement propice à l'épanouissement personnel et professionnel, en offrant des opportunités d'apprentissage, de partage et de développement du leadership.</p>
     </div>
   </section>
 
