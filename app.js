@@ -60,8 +60,8 @@ const team = [
 const newsSlides = [
   {
     date: "", tag: "CITATION",
-    title: "Le courage ne rugit pas toujours. Parfois, le courage est la petite voix à la fin de la journée qui dit : ‘Je réessaierai demain.’",
-    desc: "Mary Anne Radmacher",
+    title: "Le succès n'est pas définitif, l'échec n'est pas fatal : c'est le courage de continuer qui compte.",
+    desc: "Winston Churchill",
     img: "",
     bgClass: "stars-bg",
     isQuote: true
