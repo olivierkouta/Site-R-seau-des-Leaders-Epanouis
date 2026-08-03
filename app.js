@@ -188,6 +188,33 @@ function renderSlide() {
   if (num) num.textContent = '0' + (currentSlide + 1);
 }
 
+// ========= PAST EVENTS SLIDER =========
+let currentEventSlide = 0;
+const totalEventSlides = 3;
+
+function prevEventSlide() {
+  currentEventSlide = (currentEventSlide - 1 + totalEventSlides) % totalEventSlides;
+  renderEventSlide();
+}
+function nextEventSlide() {
+  currentEventSlide = (currentEventSlide + 1) % totalEventSlides;
+  renderEventSlide();
+}
+function setEventSlide(index) {
+  currentEventSlide = index;
+  renderEventSlide();
+}
+function renderEventSlide() {
+  for (let i = 0; i < totalEventSlides; i++) {
+    const slide = document.getElementById('event-slide-' + i);
+    if (slide) slide.classList.toggle('active', i === currentEventSlide);
+  }
+  const dots = document.querySelectorAll('#events-dots .dot');
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === currentEventSlide);
+  });
+}
+
 // ========= VIEWS =========
 function renderView() {
   const app = document.getElementById('app');
@@ -259,7 +286,53 @@ function homeHTML() {
     </div>
   </section>
 
-  <section class="values-home">
+  <section class="events-gallery">
+    <div class="events-gallery-inner">
+      <div class="events-header">
+        <p class="eyebrow">HISTORIQUE & SOUVENIRS</p>
+        <h2>Retour sur nos <em>derniers événements</em></h2>
+      </div>
+      <div class="events-slider-wrap">
+        <div class="events-slider">
+          <div class="event-slide active" id="event-slide-0">
+            <div class="event-img-box">
+              <img src="Photos RLE/Conférence.jpg" alt="Événement 1" id="event-img-0"/>
+              <div class="event-img-overlay">
+                <span class="event-tag">ÉVÉNEMENT 01</span>
+              </div>
+            </div>
+          </div>
+          <div class="event-slide" id="event-slide-1">
+            <div class="event-img-box">
+              <img src="Photos RLE/actualité.png" alt="Événement 2" id="event-img-1"/>
+              <div class="event-img-overlay">
+                <span class="event-tag">ÉVÉNEMENT 02</span>
+              </div>
+            </div>
+          </div>
+          <div class="event-slide" id="event-slide-2">
+            <div class="event-img-box">
+              <img src="Photos RLE/Atelier_sharpened.png" alt="Événement 3" id="event-img-2"/>
+              <div class="event-img-overlay">
+                <span class="event-tag">ÉVÉNEMENT 03</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="events-nav">
+          <button class="arrow-btn dark-arrow" onclick="prevEventSlide()">&#8249;</button>
+          <div class="events-dots" id="events-dots">
+            <span class="dot active" onclick="setEventSlide(0)"></span>
+            <span class="dot" onclick="setEventSlide(1)"></span>
+            <span class="dot" onclick="setEventSlide(2)"></span>
+          </div>
+          <button class="arrow-btn dark-arrow" onclick="nextEventSlide()">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="values-home dark-values">
     <div style="max-width:56rem;margin:0 auto">
       <p class="eyebrow">L'Âme du Réseau</p>
       <h2>Nos <em>Valeurs</em></h2>

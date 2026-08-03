@@ -350,3 +350,139 @@ select option { color: #0A0A0A; }
 .gold-text-slide .news-desc {
   color: rgba(179, 139, 89, 0.8) !important;
 }
+
+/* Past Events Section */
+.events-gallery {
+  padding: 6rem 2rem;
+  background: #FDFCF7;
+  text-align: center;
+}
+.events-header .eyebrow {
+  color: #B38B59;
+  font-size: .68rem;
+  letter-spacing: .8em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.events-header h2 {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #0A0A0A;
+  margin-bottom: 3rem;
+}
+.events-header h2 em {
+  color: #B38B59;
+  font-style: italic;
+  font-weight: 300;
+}
+.events-slider-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.events-slider {
+  position: relative;
+  min-height: 480px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+.event-slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.event-slide.active {
+  display: block;
+  animation: fadeUp .6s ease forwards;
+}
+.event-img-box {
+  position: relative;
+  width: 100%;
+  height: 480px;
+}
+.event-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.event-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.event-tag {
+  background: #B38B59;
+  color: #fff;
+  font-size: .6rem;
+  font-weight: 700;
+  padding: .4rem 1.2rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+.events-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+.dark-arrow {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0A0A0A;
+  font-size: 1.2rem;
+  transition: all .3s;
+  background: transparent;
+}
+.dark-arrow:hover {
+  background: #B38B59;
+  border-color: #B38B59;
+  color: #fff;
+}
+.events-dots {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+}
+.events-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all .3s;
+}
+.events-dots .dot.active {
+  background: #B38B59;
+  transform: scale(1.25);
+}
+
+/* Dark Values Section */
+.values-home.dark-values {
+  background: #0A0A0A;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.values-home.dark-values h2 {
+  color: #fff;
+}
+.values-home.dark-values h2 em {
+  color: #B38B59;
+}
+.values-home.dark-values blockquote {
+  color: rgba(255, 255, 255, 0.85);
+}
