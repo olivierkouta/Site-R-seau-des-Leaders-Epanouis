@@ -486,3 +486,36 @@ select option { color: #0A0A0A; }
 .values-home.dark-values blockquote {
   color: rgba(255, 255, 255, 0.85);
 }
+
+/* Light CTA Section */
+.cta-section.light-cta {
+  background: #FFFFFF;
+  color: #0A0A0A;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.cta-section.light-cta::after {
+  background: rgba(179, 139, 89, 0.06);
+}
+.cta-section.light-cta .cta-title {
+  color: #0A0A0A;
+}
+.cta-section.light-cta .cta-text {
+  color: rgba(0, 0, 0, 0.7);
+}
+.cta-section.light-cta .cta-box {
+  background: #FDFCF7;
+  border: 1px solid rgba(179, 139, 89, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+}
+.cta-section.light-cta .cta-box-quote {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* Mobile Responsiveness for Past Events */
+@media (max-width: 768px) {
+  .events-gallery { padding: 4rem 1.5rem; }
+  .events-slider { min-height: 280px; }
+  .event-img-box { height: 280px; }
+  .event-img-overlay { padding: 1.2rem; }
+  .event-tag { font-size: .55rem; padding: .3rem .8rem; }
+}

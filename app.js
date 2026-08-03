@@ -296,25 +296,25 @@ function homeHTML() {
         <div class="events-slider">
           <div class="event-slide active" id="event-slide-0">
             <div class="event-img-box">
-              <img src="Photos RLE/Conférence.jpg" alt="Événement 1" id="event-img-0"/>
+              <img src="Photos RLE/evenement_immobilier.jpg" alt="Atelier Immobilier" id="event-img-0"/>
               <div class="event-img-overlay">
-                <span class="event-tag">ÉVÉNEMENT 01</span>
+                <span class="event-tag">IMMOBILIER : PASSEZ AU PROCHAIN NIVEAU</span>
               </div>
             </div>
           </div>
           <div class="event-slide" id="event-slide-1">
             <div class="event-img-box">
-              <img src="Photos RLE/actualité.png" alt="Événement 2" id="event-img-1"/>
+              <img src="Photos RLE/evenement_femmes.jpg" alt="Femmes au cœur du changement" id="event-img-1"/>
               <div class="event-img-overlay">
-                <span class="event-tag">ÉVÉNEMENT 02</span>
+                <span class="event-tag">FEMMES AU CŒUR DU CHANGEMENT</span>
               </div>
             </div>
           </div>
           <div class="event-slide" id="event-slide-2">
             <div class="event-img-box">
-              <img src="Photos RLE/Atelier_sharpened.png" alt="Événement 3" id="event-img-2"/>
+              <img src="Photos RLE/evenement_oser_briller.jpg" alt="Conférence Oser Briller" id="event-img-2"/>
               <div class="event-img-overlay">
-                <span class="event-tag">ÉVÉNEMENT 03</span>
+                <span class="event-tag">CONFÉRENCE OSER BRILLER</span>
               </div>
             </div>
           </div>
@@ -340,7 +340,7 @@ function homeHTML() {
     </div>
   </section>
 
-  <section class="cta-section">
+  <section class="cta-section light-cta">
     <div class="cta-inner">
       <div>
         <p class="cta-eyebrow">Propulser l'Excellence</p>
