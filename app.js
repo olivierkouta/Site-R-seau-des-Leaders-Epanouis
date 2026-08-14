@@ -127,7 +127,7 @@ function showView(view) {
 
 function getViewFromHash() {
   const hash = window.location.hash.replace('#', '');
-  const valid = ['home','about','programs','team','contact','donation'];
+  const valid = ['home','about','programs','team','contact','donation','legal','privacy'];
   return valid.includes(hash) ? hash : 'home';
 }
 
@@ -226,6 +226,8 @@ function renderView() {
     case 'team':     app.innerHTML = teamHTML(); break;
     case 'contact':  app.innerHTML = contactHTML(); break;
     case 'donation': app.innerHTML = donationHTML(); break;
+    case 'legal':    app.innerHTML = legalHTML(); break;
+    case 'privacy':  app.innerHTML = privacyHTML(); break;
   }
 }
 
@@ -610,6 +612,117 @@ function submitDonation(e) {
       <h2>Merci infiniment.</h2>
       <p>Votre don a été traité avec succès.</p>
     </div>`;
+}
+
+// ========= LEGAL =========
+function legalHTML() {
+  return `<div class="view">
+  <section class="page-hero" style="background:#0A0A0A;color:#fff;padding:6rem 2rem 4rem;text-align:center;">
+    <div class="page-hero-inner" style="max-width:800px;margin:0 auto;">
+      <p class="page-eyebrow" style="color:#B38B59;letter-spacing:.3em;text-transform:uppercase;font-weight:600;font-size:.8rem;margin-bottom:1rem;">Information Réglementaire</p>
+      <h1 class="page-title" style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,3.5rem);font-weight:700;">Mentions <em style="color:#B38B59;font-style:italic;">Légales.</em></h1>
+    </div>
+  </section>
+
+  <section class="legal-section" style="padding: 5rem 2rem; background: #FFFFFF; color: #0A0A0A;">
+    <div style="max-width: 900px; margin: 0 auto; line-height: 1.8; font-size: 1rem;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 1rem;">1. Éditeur du site</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        Le site internet <strong>www.rlefln.com</strong> est édité et géré par le <strong>Réseau des Leaders Épanouis (RLE) / Fulfilled Leaders Network (FLN)</strong>, une organisation basée à Ottawa, Ontario, Canada.<br/>
+        <strong>Courriel de contact :</strong> <a href="mailto:Contact@rlefln.com" style="color: #B38B59; text-decoration: underline; font-weight: 600;">Contact@rlefln.com</a>
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">2. Propriété intellectuelle</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        L'ensemble des éléments constituant ce site (textes, visuels, photographies, logos, charte graphique, architecture) sont la propriété exclusive du Réseau des Leaders Épanouis (RLE), sauf mention contraire explicite.<br/>
+        Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site est strictement interdite sans l'autorisation écrite préalable du Réseau des Leaders Épanouis.
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">3. Protection des données personnelles & Confidentialité</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        Le Réseau des Leaders Épanouis s'engage à préserver la confidentialité des informations fournies en ligne par l'utilisateur. Les données personnelles transmises via nos formulaires (contact, abonnement, dons) sont destinées exclusivement au traitement interne de vos demandes.<br/>
+        Conformément aux lois canadiennes sur la protection des renseignements personnels, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Pour exercer ce droit, adressez votre demande à <a href="mailto:Contact@rlefln.com" style="color: #B38B59; text-decoration: underline; font-weight: 600;">Contact@rlefln.com</a>.
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">4. Limitation de responsabilité</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        Le Réseau des Leaders Épanouis met tout en œuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur le site. Toutefois, le RLE ne peut être tenu responsable des omissions, inexactitudes ou retards de mise à jour.<br/>
+        Le site peut inclure des hyperliens vers d'autres sites externes. Le RLE n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu ou leurs pratiques.
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">5. Droit applicable</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        Les présentes mentions légales sont régies et interprétées conformément aux lois en vigueur dans la province d'Ontario et aux lois fédérales du Canada qui s'y appliquent.
+      </p>
+    </div>
+  </section>
+</div>`;
+}
+
+// ========= PRIVACY =========
+function privacyHTML() {
+  return `<div class="view">
+  <section class="page-hero" style="background:#0A0A0A;color:#fff;padding:6rem 2rem 4rem;text-align:center;">
+    <div class="page-hero-inner" style="max-width:800px;margin:0 auto;">
+      <p class="page-eyebrow" style="color:#B38B59;letter-spacing:.3em;text-transform:uppercase;font-weight:600;font-size:.8rem;margin-bottom:1rem;">Protection de la Vie Privée</p>
+      <h1 class="page-title" style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,3.5rem);font-weight:700;">Politique de <em style="color:#B38B59;font-style:italic;">Confidentialité.</em></h1>
+    </div>
+  </section>
+
+  <section class="privacy-section" style="padding: 5rem 2rem; background: #FFFFFF; color: #0A0A0A;">
+    <div style="max-width: 900px; margin: 0 auto; line-height: 1.8; font-size: 1rem;">
+      <p style="margin-bottom: 2rem; color: rgba(0,0,0,0.6); font-size: 0.9rem;"><em>Dernière mise à jour : Août 2026</em></p>
+
+      <p style="margin-bottom: 2rem; color: rgba(0,0,0,0.85); font-size: 1.05rem;">
+        Le <strong>Réseau des Leaders Épanouis (RLE / Fulfilled Leaders Network)</strong>, basé à Ottawa (Ontario, Canada), s'engage fermement à protéger la vie privée et la confidentialité des renseignements personnels de ses membres, donateurs, bénévoles et visiteurs.
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2rem;">1. Collecte des renseignements personnels</h2>
+      <p style="margin-bottom: 1rem; color: rgba(0,0,0,0.75);">
+        Dans le cadre de nos activités communautaires et organisationnelles, nous pouvons recueillir des renseignements personnels lorsque vous :
+      </p>
+      <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; color: rgba(0,0,0,0.75);">
+        <li>Remplissez notre formulaire de contact ou de demande de renseignements.</li>
+        <li>Effectuez un don ou soutenez financièrement l'organisation.</li>
+        <li>Vous inscrivez à nos conférences, ateliers ou programmes de développement.</li>
+        <li>Vous abonnez à nos communications ou à notre infolettre.</li>
+      </ul>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        Les renseignements collectés se limitent aux informations nécessaires (nom, prénom, adresse courriel, numéro de téléphone, message) fournies volontairement par vos soins.
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">2. Utilisation des renseignements</h2>
+      <p style="margin-bottom: 1rem; color: rgba(0,0,0,0.75);">
+        Vos renseignements personnels sont utilisés exclusivement aux fins suivantes :
+      </p>
+      <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; color: rgba(0,0,0,0.75);">
+        <li>Répondre à vos messages et assurer le suivi de vos demandes.</li>
+        <li>Traiter et confirmer vos dons ainsi que l'émission des reçus correspondants.</li>
+        <li>Gérer vos inscriptions à nos événements et activités communautaires.</li>
+        <li>Vous transmettre des nouvelles sur l'impact du RLE (avec votre consentement explicite).</li>
+      </ul>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">3. Partage et protection des données</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        <strong>Aucune commercialisation :</strong> Le Réseau des Leaders Épanouis ne vend, ne loue, ne troque et ne partage <strong>jamais</strong> vos données personnelles avec des tiers à des fins commerciales ou publicitaires.<br/><br/>
+        <strong>Accès restreint & Sécurité :</strong> L'accès à vos informations est strictement réservé aux membres autorisés de l'équipe du RLE. Nous mettons en œuvre des mesures de sécurité physiques, électroniques et organisationnelles adéquates pour prévenir tout accès non autorisé, perte ou divulgation.
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">4. Vos droits</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        Conformément aux lois canadiennes sur la protection des renseignements personnels (LPRPDE / PIPEDA), vous disposez du droit d'accéder à vos informations personnelles, d'en demander la rectification, ou de retirer votre consentement à tout moment en nous contactant à <a href="mailto:Contact@rlefln.com" style="color: #B38B59; text-decoration: underline; font-weight: 600;">Contact@rlefln.com</a>.
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">5. Contact concernant la confidentialité</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        Pour toute question, préoccupation ou demande relative à la gestion de vos données personnelles :<br/>
+        <strong>Organisation :</strong> Réseau des Leaders Épanouis (RLE / FLN)<br/>
+        <strong>Siège :</strong> Ottawa, Ontario, Canada<br/>
+        <strong>Courriel :</strong> <a href="mailto:Contact@rlefln.com" style="color: #B38B59; text-decoration: underline; font-weight: 600;">Contact@rlefln.com</a>
+      </p>
+    </div>
+  </section>
+</div>`;
 }
 
 // ========= INIT =========
