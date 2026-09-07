@@ -320,16 +320,16 @@ function homeHTML() {
             <polygon points="12,6 22,11 22,23 12,28 2,23 2,11" fill="#00874E" />
             <polygon points="12,10 18,13 18,21 12,24 6,21 6,13" fill="#FFFFFF" />
             <polygon points="12,13 15,15 15,19 12,20 9,19 9,15" fill="#00874E" />
-            <text x="32" y="23" fill="#FFFFFF" font-family="'Montserrat', 'Arial', sans-serif" font-weight="700" font-size="15" letter-spacing="0.5">Desjardins</text>
+            <text x="32" y="23" fill="#00874E" font-family="'Montserrat', 'Arial', sans-serif" font-weight="700" font-size="15" letter-spacing="0.5">Desjardins</text>
           </svg>
         </div>
 
         <div class="partner-card" title="RGA - Regroupement des gens d'affaires">
           <svg class="partner-logo-svg" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="5" y="25" fill="#FFFFFF" font-family="'Montserrat', 'Arial', sans-serif" font-weight="900" font-size="20" letter-spacing="1">RGA</text>
-            <text x="58" y="15" fill="rgba(255,255,255,0.85)" font-family="'Arial', sans-serif" font-size="6.5" font-weight="700">REGROUPEMENT</text>
-            <text x="58" y="22" fill="rgba(255,255,255,0.7)" font-family="'Arial', sans-serif" font-size="5.5">DES GENS D'AFFAIRES</text>
-            <text x="58" y="28" fill="rgba(255,255,255,0.5)" font-family="'Arial', sans-serif" font-size="4.5">CAPITALE NATIONALE</text>
+            <text x="5" y="25" fill="#0A0A0A" font-family="'Montserrat', 'Arial', sans-serif" font-weight="900" font-size="20" letter-spacing="1">RGA</text>
+            <text x="58" y="15" fill="rgba(10,10,10,0.85)" font-family="'Arial', sans-serif" font-size="6.5" font-weight="700">REGROUPEMENT</text>
+            <text x="58" y="22" fill="rgba(10,10,10,0.7)" font-family="'Arial', sans-serif" font-size="5.5">DES GENS D'AFFAIRES</text>
+            <text x="58" y="28" fill="rgba(10,10,10,0.55)" font-family="'Arial', sans-serif" font-size="4.5">CAPITALE NATIONALE</text>
           </svg>
         </div>
 
