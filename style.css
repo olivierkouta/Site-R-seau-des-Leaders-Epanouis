@@ -651,11 +651,10 @@ select option { color: #0A0A0A; }
   }
 }
 
-/* Partners Section - Single Row Gold Monochrome */
+/* Partners Section */
 .partners-section {
-  padding: 4.5rem 2rem;
-  background: #090909;
-  color: #fff;
+  padding: 4rem 2rem;
+  background: #060606;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
 }
@@ -665,77 +664,82 @@ select option { color: #0A0A0A; }
 }
 .partners-eyebrow {
   color: #B38B59;
-  font-size: .75rem;
+  font-size: .7rem;
   font-weight: 700;
-  letter-spacing: .3em;
+  letter-spacing: .25em;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   opacity: 0.9;
 }
-.partners-row {
+.partners-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem 4rem;
+  gap: 1.5rem 2.5rem;
 }
-.partner-logo-item {
+.partner-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.85;
+  padding: .8rem 1.5rem;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  min-width: 160px;
+  height: 60px;
   transition: all .3s ease;
-  filter: drop-shadow(0 2px 8px rgba(179, 139, 89, 0.15));
 }
-.partner-logo-item:hover {
-  opacity: 1;
-  transform: translateY(-3px) scale(1.03);
+.partner-card:hover {
+  background: rgba(179, 139, 89, 0.08);
+  border-color: rgba(179, 139, 89, 0.4);
+  transform: translateY(-2px);
 }
 .partner-logo-svg {
-  height: 34px;
+  height: 32px;
   width: auto;
-  max-width: 160px;
+  max-width: 150px;
 }
-.option-femmes-mono {
-  border: 1.5px solid #B38B59;
-  padding: 4px 14px;
+.option-femmes-box {
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  padding: 4px 12px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  line-height: 1.15;
+  line-height: 1.1;
   border-radius: 2px;
 }
-.option-femmes-mono .of-top {
-  font-size: .68rem;
-  letter-spacing: 2.5px;
-  color: #B38B59;
+.option-femmes-box .of-top {
+  font-size: .65rem;
+  letter-spacing: 2px;
+  color: #fff;
   font-weight: 700;
 }
-.option-femmes-mono .of-bot {
-  font-size: .68rem;
-  letter-spacing: 2.5px;
-  color: #B38B59;
+.option-femmes-box .of-bot {
+  font-size: .65rem;
+  letter-spacing: 2px;
+  color: #fff;
   font-weight: 700;
-  border-top: 1px solid rgba(179, 139, 89, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
   margin-top: 2px;
   padding-top: 2px;
 }
-.la-cite-mono {
+.la-cite-box {
   display: flex;
   align-items: center;
   gap: 6px;
 }
-.la-cite-mono .lc-text {
+.la-cite-box .lc-text {
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 900;
-  font-size: 1.1rem;
-  color: #B38B59;
+  font-size: 1rem;
+  color: #fff;
   letter-spacing: 1px;
 }
-.la-cite-mono .lc-dot {
-  width: 9px;
-  height: 9px;
-  background: #B38B59;
+.la-cite-box .lc-dot {
+  width: 10px;
+  height: 10px;
+  background: #00874E;
   border-radius: 50%;
   display: inline-block;
 }
