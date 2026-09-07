@@ -310,46 +310,46 @@ function homeHTML() {
     </div>
   </section>
 
-  <!-- SECTION PARTENAIRES -->
+  <!-- SECTION PARTENAIRES MONOCHROME OR -->
   <section class="partners-section">
     <div class="partners-inner">
       <p class="partners-eyebrow">MERCI À NOS PARTENAIRES POUR LEUR PRÉCIEUX SOUTIEN</p>
-      <div class="partners-grid">
-        <div class="partner-card" title="Desjardins">
+      <div class="partners-row">
+        <div class="partner-logo-item" title="Desjardins">
           <svg class="partner-logo-svg" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="12,6 22,11 22,23 12,28 2,23 2,11" fill="#00874E" />
-            <polygon points="12,10 18,13 18,21 12,24 6,21 6,13" fill="#FFFFFF" />
-            <polygon points="12,13 15,15 15,19 12,20 9,19 9,15" fill="#00874E" />
-            <text x="32" y="23" fill="#00874E" font-family="'Montserrat', 'Arial', sans-serif" font-weight="700" font-size="15" letter-spacing="0.5">Desjardins</text>
+            <polygon points="12,6 22,11 22,23 12,28 2,23 2,11" fill="#B38B59" />
+            <polygon points="12,10 18,13 18,21 12,24 6,21 6,13" fill="#0A0A0A" />
+            <polygon points="12,13 15,15 15,19 12,20 9,19 9,15" fill="#B38B59" />
+            <text x="32" y="23" fill="#B38B59" font-family="'Montserrat', 'Arial', sans-serif" font-weight="700" font-size="15" letter-spacing="0.5">Desjardins</text>
           </svg>
         </div>
 
-        <div class="partner-card" title="RGA - Regroupement des gens d'affaires">
+        <div class="partner-logo-item" title="RGA - Regroupement des gens d'affaires">
           <svg class="partner-logo-svg" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="5" y="25" fill="#0A0A0A" font-family="'Montserrat', 'Arial', sans-serif" font-weight="900" font-size="20" letter-spacing="1">RGA</text>
-            <text x="58" y="15" fill="rgba(10,10,10,0.85)" font-family="'Arial', sans-serif" font-size="6.5" font-weight="700">REGROUPEMENT</text>
-            <text x="58" y="22" fill="rgba(10,10,10,0.7)" font-family="'Arial', sans-serif" font-size="5.5">DES GENS D'AFFAIRES</text>
-            <text x="58" y="28" fill="rgba(10,10,10,0.55)" font-family="'Arial', sans-serif" font-size="4.5">CAPITALE NATIONALE</text>
+            <text x="0" y="25" fill="#B38B59" font-family="'Montserrat', 'Arial', sans-serif" font-weight="900" font-size="20" letter-spacing="1">RGA</text>
+            <text x="52" y="15" fill="#B38B59" font-family="'Arial', sans-serif" font-size="6.5" font-weight="700">REGROUPEMENT</text>
+            <text x="52" y="22" fill="#B38B59" font-family="'Arial', sans-serif" font-size="5.5" opacity="0.85">DES GENS D'AFFAIRES</text>
+            <text x="52" y="28" fill="#B38B59" font-family="'Arial', sans-serif" font-size="4.5" opacity="0.7">CAPITALE NATIONALE</text>
           </svg>
         </div>
 
-        <div class="partner-card" title="CLÉ - Centre de leadership et d'évaluation">
-          <svg class="partner-logo-svg" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10,24 C10,14 20,10 22,10 C22,20 12,24 10,24 Z" fill="#00874E" />
-            <path d="M12,24 C16,20 20,24 26,16" stroke="#00874E" stroke-width="2" fill="none" />
-            <text x="32" y="25" fill="#00874E" font-family="'Montserrat', 'Arial', sans-serif" font-weight="800" font-size="18" letter-spacing="2">CLÉ</text>
+        <div class="partner-logo-item" title="CLÉ - Centre de leadership et d'évaluation">
+          <svg class="partner-logo-svg" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10,24 C10,14 20,10 22,10 C22,20 12,24 10,24 Z" fill="#B38B59" />
+            <path d="M12,24 C16,20 20,24 26,16" stroke="#B38B59" stroke-width="2" fill="none" />
+            <text x="32" y="25" fill="#B38B59" font-family="'Montserrat', 'Arial', sans-serif" font-weight="800" font-size="18" letter-spacing="2">CLÉ</text>
           </svg>
         </div>
 
-        <div class="partner-card" title="Option Femmes">
-          <div class="option-femmes-box">
+        <div class="partner-logo-item" title="Option Femmes">
+          <div class="option-femmes-mono">
             <span class="of-top">OPTION</span>
             <span class="of-bot">FEMMES</span>
           </div>
         </div>
 
-        <div class="partner-card" title="La Cité">
-          <div class="la-cite-box">
+        <div class="partner-logo-item" title="La Cité">
+          <div class="la-cite-mono">
             <span class="lc-text">LA CITÉ</span>
             <span class="lc-dot"></span>
           </div>

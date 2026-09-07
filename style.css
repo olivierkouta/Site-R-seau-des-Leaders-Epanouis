@@ -651,12 +651,12 @@ select option { color: #0A0A0A; }
   }
 }
 
-/* Partners Section */
+/* Partners Section - Single Row Gold Monochrome */
 .partners-section {
-  padding: 4rem 2rem;
-  background: #FFFFFF;
-  color: #0A0A0A;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 4.5rem 2rem;
+  background: #090909;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
 }
 .partners-inner {
@@ -667,82 +667,75 @@ select option { color: #0A0A0A; }
   color: #B38B59;
   font-size: .75rem;
   font-weight: 700;
-  letter-spacing: .25em;
+  letter-spacing: .3em;
   text-transform: uppercase;
-  margin-bottom: 2rem;
-  opacity: 1;
+  margin-bottom: 3rem;
+  opacity: 0.9;
 }
-.partners-grid {
+.partners-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem 2.5rem;
+  gap: 2.5rem 4rem;
 }
-.partner-card {
+.partner-logo-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .8rem 1.8rem;
-  background: #FDFCF7;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-  min-width: 165px;
-  height: 62px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  opacity: 0.85;
   transition: all .3s ease;
+  filter: drop-shadow(0 2px 8px rgba(179, 139, 89, 0.15));
 }
-.partner-card:hover {
-  background: #FFFFFF;
-  border-color: #B38B59;
-  box-shadow: 0 8px 25px rgba(179, 139, 89, 0.15);
-  transform: translateY(-3px);
+.partner-logo-item:hover {
+  opacity: 1;
+  transform: translateY(-3px) scale(1.03);
 }
 .partner-logo-svg {
-  height: 32px;
+  height: 34px;
   width: auto;
-  max-width: 150px;
+  max-width: 160px;
 }
-.option-femmes-box {
-  border: 1px solid #0A0A0A;
-  padding: 4px 12px;
+.option-femmes-mono {
+  border: 1.5px solid #B38B59;
+  padding: 4px 14px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  line-height: 1.15;
   border-radius: 2px;
 }
-.option-femmes-box .of-top {
-  font-size: .65rem;
-  letter-spacing: 2px;
-  color: #0A0A0A;
+.option-femmes-mono .of-top {
+  font-size: .68rem;
+  letter-spacing: 2.5px;
+  color: #B38B59;
   font-weight: 700;
 }
-.option-femmes-box .of-bot {
-  font-size: .65rem;
-  letter-spacing: 2px;
-  color: #0A0A0A;
+.option-femmes-mono .of-bot {
+  font-size: .68rem;
+  letter-spacing: 2.5px;
+  color: #B38B59;
   font-weight: 700;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(179, 139, 89, 0.4);
   margin-top: 2px;
   padding-top: 2px;
 }
-.la-cite-box {
+.la-cite-mono {
   display: flex;
   align-items: center;
   gap: 6px;
 }
-.la-cite-box .lc-text {
+.la-cite-mono .lc-text {
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 900;
-  font-size: 1rem;
-  color: #0A0A0A;
+  font-size: 1.1rem;
+  color: #B38B59;
   letter-spacing: 1px;
 }
-.la-cite-box .lc-dot {
-  width: 10px;
-  height: 10px;
-  background: #00874E;
+.la-cite-mono .lc-dot {
+  width: 9px;
+  height: 9px;
+  background: #B38B59;
   border-radius: 50%;
   display: inline-block;
 }
