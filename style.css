@@ -689,6 +689,7 @@ select option { color: #0A0A0A; }
   min-width: auto;
   height: 48px;
   opacity: 0.85;
+  text-decoration: none;
   transition: all .3s ease;
 }
 .partner-card:hover {
