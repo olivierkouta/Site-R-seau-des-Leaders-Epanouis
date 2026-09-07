@@ -304,7 +304,7 @@ function homeHTML() {
         </div>
 
         <div class="featured-ctas">
-          <button class="btn-primary" onclick="showView('contact')">NOUS CONTACTER / S'INSCRIRE</button>
+          <a href="https://eventbrite.com/e/billets-conference-oser-briller-2026-1999049338384?aff=ebdsshios&sg=dba5ddfd7f84051e3a94d12a5b985fc289b92cccc24be46e1f06a3f7bf29ae70c470aeefe1394bce01fed86c9e337e08e2e87f146a3c00fd0d1c549c1bf11e986d71a45ebc2760e896139cd1eb" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">S'INSCRIRE</a>
         </div>
       </div>
     </div>
