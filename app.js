@@ -70,7 +70,8 @@ const newsSlides = [
     date: "17 OCTOBRE 2026", tag: "CONFÉRENCE ANNUELLE",
     title: "Oser Briller – 2ᵉ édition",
     desc: "Thème : Héritage & Avenir • 15h à 18h au Collège La Cité (Ottawa) • Panel, Atelier & Réseautage",
-    img: "Photos RLE/affiche_oser_briller_2.jpg"
+    img: "Photos RLE/affiche_oser_briller_2.jpg",
+    hideText: true
   }
 ];
 
@@ -233,11 +234,15 @@ function renderView() {
 function homeHTML() {
   const slideBgs = newsSlides.map((s, i) => `
     <div id="slide-bg-${i}" class="news-bg ${i === 0 ? 'active' : ''} ${s.bgClass || ''}" style="position:absolute;inset:0;">
-      ${s.img ? `<img src="${s.img}" alt="${s.title}" style="width:100%;height:100%;object-fit:cover;opacity:1"/>` : ''}
-      <div class="news-gradient"></div>
+      ${s.img ? `<img src="${s.img}" alt="${s.title}" style="width:100%;height:100%;object-fit:${s.hideText ? 'contain' : 'cover'};background:#0A0A0A;opacity:1"/>` : ''}
+      ${s.hideText ? '' : '<div class="news-gradient"></div>'}
     </div>`).join('');
 
-  const slides = newsSlides.map((s, i) => `
+  const slides = newsSlides.map((s, i) => {
+    if (s.hideText) {
+      return `<div id="slide-${i}" class="news-slide ${i === 0 ? 'active' : ''}"></div>`;
+    }
+    return `
     <div id="slide-${i}" class="news-slide ${i === 0 ? 'active' : ''} ${s.isQuote ? 'is-quote' : ''}">
       <div style="display:flex;align-items:center;gap:1.5rem;margin-bottom:1.5rem">
         <span class="news-tag" style="${s.isQuote ? 'background:rgba(179,139,89,.2);border:1px solid #B38B59;color:#B38B59' : ''}">${s.tag}</span>
@@ -245,7 +250,8 @@ function homeHTML() {
       </div>
       ${s.isQuote ? `<blockquote class="quote-content">${s.title}</blockquote>` : `<h3 class="news-headline">${s.title}</h3>`}
       <p class="${s.isQuote ? 'quote-author' : 'news-desc'}">${s.isQuote ? `— ${s.desc}` : s.desc}</p>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 
   return `<div class="view">
   <header class="hero">
