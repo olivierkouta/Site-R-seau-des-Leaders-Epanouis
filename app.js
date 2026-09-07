@@ -234,15 +234,11 @@ function renderView() {
 function homeHTML() {
   const slideBgs = newsSlides.map((s, i) => `
     <div id="slide-bg-${i}" class="news-bg ${i === 0 ? 'active' : ''} ${s.bgClass || ''}" style="position:absolute;inset:0;">
-      ${s.img ? `<img src="${s.img}" alt="${s.title}" style="width:100%;height:100%;object-fit:${s.hideText ? 'contain' : 'cover'};background:#0A0A0A;opacity:1"/>` : ''}
-      ${s.hideText ? '' : '<div class="news-gradient"></div>'}
+      ${s.img ? `<img src="${s.img}" alt="${s.title}" style="width:100%;height:100%;object-fit:cover;opacity:1"/>` : ''}
+      <div class="news-gradient"></div>
     </div>`).join('');
 
-  const slides = newsSlides.map((s, i) => {
-    if (s.hideText) {
-      return `<div id="slide-${i}" class="news-slide ${i === 0 ? 'active' : ''}"></div>`;
-    }
-    return `
+  const slides = newsSlides.map((s, i) => `
     <div id="slide-${i}" class="news-slide ${i === 0 ? 'active' : ''} ${s.isQuote ? 'is-quote' : ''}">
       <div style="display:flex;align-items:center;gap:1.5rem;margin-bottom:1.5rem">
         <span class="news-tag" style="${s.isQuote ? 'background:rgba(179,139,89,.2);border:1px solid #B38B59;color:#B38B59' : ''}">${s.tag}</span>
@@ -250,8 +246,7 @@ function homeHTML() {
       </div>
       ${s.isQuote ? `<blockquote class="quote-content">${s.title}</blockquote>` : `<h3 class="news-headline">${s.title}</h3>`}
       <p class="${s.isQuote ? 'quote-author' : 'news-desc'}">${s.isQuote ? `— ${s.desc}` : s.desc}</p>
-    </div>`;
-  }).join('');
+    </div>`).join('');
 
   return `<div class="view">
   <header class="hero">
@@ -269,6 +264,58 @@ function homeHTML() {
       </div>
     </div>
   </header>
+
+  <!-- SECTION DÉDIÉE ÉVÉNEMENT PHARE : OSER BRILLER 2E ÉDITION -->
+  <section class="featured-event">
+    <div class="featured-event-inner">
+      <div class="featured-event-poster">
+        <img src="Photos RLE/affiche_oser_briller_2.jpg" alt="Affiche Conférence Oser Briller 2e édition" />
+      </div>
+      <div class="featured-event-content">
+        <p class="featured-eyebrow">ÉVÉNEMENT ANNUEL • 2ᵉ ÉDITION</p>
+        <h2 class="featured-title">Conférence <em>Oser Briller</em></h2>
+        <div class="theme-badge">THÈME : HÉRITAGE & AVENIR</div>
+        <p class="featured-desc">
+          Rejoignez-nous pour la 2ᵉ édition de notre grande conférence annuelle. Un rendez-vous d'exception axé sur le leadership, la passion, la vision et la croissance économique.
+        </p>
+
+        <div class="featured-details-grid">
+          <div class="detail-item">
+            <span class="detail-icon">📅</span>
+            <div>
+              <strong>Date</strong>
+              <p>Samedi 17 Octobre 2026</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <div>
+              <strong>Horaire</strong>
+              <p>15h00 – 18h00</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <div>
+              <strong>Lieu</strong>
+              <p>Collège La Cité (Ottawa)</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💡</span>
+            <div>
+              <strong>Programme</strong>
+              <p>Panel • Atelier interactif • Réseautage</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-ctas">
+          <button class="btn-primary" onclick="showView('contact')">NOUS CONTACTER / S'INSCRIRE</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="news-section">
     ${slideBgs}
