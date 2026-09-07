@@ -67,11 +67,10 @@ const newsSlides = [
     isQuote: true
   },
   {
-    date: "OCTOBRE 2026", tag: "CONFÉRENCE",
+    date: "17 OCTOBRE 2026", tag: "CONFÉRENCE ANNUELLE",
     title: "Oser Briller – 2ᵉ édition",
-    desc: "Détails à venir !",
-    img: "",
-    bgClass: "gold-text-slide"
+    desc: "Thème : Héritage & Avenir • 15h à 18h au Collège La Cité (Ottawa) • Panel, Atelier & Réseautage",
+    img: "Photos RLE/affiche_oser_briller_2.jpg"
   }
 ];
 
