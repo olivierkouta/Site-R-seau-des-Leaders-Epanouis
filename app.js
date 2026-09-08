@@ -207,6 +207,33 @@ function renderEventSlide() {
   });
 }
 
+// ========= EDITION 1 CAROUSEL =========
+let currentEdition1Slide = 0;
+const edition1PhotosCount = 6;
+
+function prevEdition1Slide() {
+  currentEdition1Slide = (currentEdition1Slide - 1 + edition1PhotosCount) % edition1PhotosCount;
+  renderEdition1Slide();
+}
+function nextEdition1Slide() {
+  currentEdition1Slide = (currentEdition1Slide + 1) % edition1PhotosCount;
+  renderEdition1Slide();
+}
+function setEdition1Slide(index) {
+  currentEdition1Slide = index;
+  renderEdition1Slide();
+}
+function renderEdition1Slide() {
+  for (let i = 0; i < edition1PhotosCount; i++) {
+    const slide = document.getElementById('ed1-slide-' + i);
+    if (slide) slide.classList.toggle('active', i === currentEdition1Slide);
+  }
+  const dots = document.querySelectorAll('#ed1-dots .dot');
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === currentEdition1Slide);
+  });
+}
+
 // ========= VIEWS =========
 function renderView() {
   const app = document.getElementById('app');
@@ -348,42 +375,51 @@ function homeHTML() {
         </p>
       </div>
 
-      <div class="edition1-stats">
-        <div class="stat-card">
-          <span class="stat-icon">👥</span>
-          <h3 class="stat-number">150+</h3>
-          <p class="stat-label">Participants Engagés</p>
+      <div class="edition1-carousel-wrap">
+        <div class="edition1-slider">
+          <div class="ed1-slide active" id="ed1-slide-0">
+            <div class="ed1-img-box">
+              <img src="Image conférence 1/photo_2_2026-09-08_18-44-34.jpg" alt="Moment fort de la 1re édition Oser Briller" />
+            </div>
+          </div>
+          <div class="ed1-slide" id="ed1-slide-1">
+            <div class="ed1-img-box">
+              <img src="Image conférence 1/photo_5_2026-09-07_17-10-34.jpg" alt="Présentation sur scène" />
+            </div>
+          </div>
+          <div class="ed1-slide" id="ed1-slide-2">
+            <div class="ed1-img-box">
+              <img src="Image conférence 1/photo_7_2026-09-07_17-10-34.jpg" alt="Intervention inspirante" />
+            </div>
+          </div>
+          <div class="ed1-slide" id="ed1-slide-3">
+            <div class="ed1-img-box">
+              <img src="Image conférence 1/photo_8_2026-09-07_17-10-34.jpg" alt="Public attentif et passionné" />
+            </div>
+          </div>
+          <div class="ed1-slide" id="ed1-slide-4">
+            <div class="ed1-img-box">
+              <img src="Image conférence 1/photo_6_2026-09-07_17-10-34.jpg" alt="Échanges et réseautage" />
+            </div>
+          </div>
+          <div class="ed1-slide" id="ed1-slide-5">
+            <div class="ed1-img-box">
+              <img src="Image conférence 1/photo_3_2026-09-08_18-44-34.jpg" alt="Clôture de la 1re édition" />
+            </div>
+          </div>
         </div>
-        <div class="stat-card">
-          <span class="stat-icon">🎤</span>
-          <h3 class="stat-number">5</h3>
-          <p class="stat-label">Intervenants D'Exception</p>
-        </div>
-        <div class="stat-card">
-          <span class="stat-icon">🤝</span>
-          <h3 class="stat-number">100%</h3>
-          <p class="stat-label">Connexions & Synergies</p>
-        </div>
-      </div>
 
-      <div class="edition1-gallery">
-        <div class="gallery-item large">
-          <img src="Image conférence 1/photo_2_2026-09-08_18-44-34.jpg" alt="Moment fort de la 1re édition Oser Briller" loading="lazy" />
-        </div>
-        <div class="gallery-item">
-          <img src="Image conférence 1/photo_5_2026-09-07_17-10-34.jpg" alt="Présentation sur scène" loading="lazy" />
-        </div>
-        <div class="gallery-item">
-          <img src="Image conférence 1/photo_7_2026-09-07_17-10-34.jpg" alt="Intervention inspirante" loading="lazy" />
-        </div>
-        <div class="gallery-item">
-          <img src="Image conférence 1/photo_8_2026-09-07_17-10-34.jpg" alt="Public attentif et passionné" loading="lazy" />
-        </div>
-        <div class="gallery-item">
-          <img src="Image conférence 1/photo_6_2026-09-07_17-10-34.jpg" alt="Échanges et réseautage" loading="lazy" />
-        </div>
-        <div class="gallery-item">
-          <img src="Image conférence 1/photo_3_2026-09-08_18-44-34.jpg" alt="Clôture de la 1re édition" loading="lazy" />
+        <div class="edition1-nav">
+          <button class="arrow-btn dark-arrow" onclick="prevEdition1Slide()">&#8249;</button>
+          <div class="edition1-dots" id="ed1-dots">
+            <span class="dot active" onclick="setEdition1Slide(0)"></span>
+            <span class="dot" onclick="setEdition1Slide(1)"></span>
+            <span class="dot" onclick="setEdition1Slide(2)"></span>
+            <span class="dot" onclick="setEdition1Slide(3)"></span>
+            <span class="dot" onclick="setEdition1Slide(4)"></span>
+            <span class="dot" onclick="setEdition1Slide(5)"></span>
+          </div>
+          <button class="arrow-btn dark-arrow" onclick="nextEdition1Slide()">&#8250;</button>
         </div>
       </div>
     </div>
