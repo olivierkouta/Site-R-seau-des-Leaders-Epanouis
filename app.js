@@ -368,10 +368,10 @@ function homeHTML() {
   <section class="edition1-recap">
     <div class="edition1-inner">
       <div class="edition1-header">
-        <p class="edition1-eyebrow">RETOUR SUR NOTRE HISTOIRE • 1ʳᵉ ÉDITION</p>
-        <h2 class="edition1-title">Un Succès Mémorable qui a <em>Tout Initié</em></h2>
+        <p class="edition1-eyebrow">1ʳᵉ ÉDITION • RETOUR EN IMAGES</p>
+        <h2 class="edition1-title">Conférence <em>Oser Briller 2025</em></h2>
         <p class="edition1-desc">
-          La première édition de la conférence <strong>Oser Briller</strong> a posé les fondations de notre mouvement. Un rassemblement vibrant dédié à l'émancipation, au partage d'expériences inspirantes et au renforcement des liens de notre communauté.
+          Un retour en images sur les moments forts de notre toute première édition.
         </p>
       </div>
 

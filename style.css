@@ -790,8 +790,8 @@ select option { color: #0A0A0A; }
 }
 .edition1-header {
   text-align: center;
-  max-width: 750px;
-  margin: 0 auto 4rem auto;
+  max-width: 650px;
+  margin: 0 auto 2.5rem auto;
 }
 .edition1-eyebrow {
   color: #B38B59;
