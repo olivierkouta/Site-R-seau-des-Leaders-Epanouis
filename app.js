@@ -441,6 +441,52 @@ function homeHTML() {
     </div>
   </section>
 
+  <section class="events-gallery">
+    <div class="events-gallery-inner">
+      <div class="events-header">
+        <p class="eyebrow">HISTORIQUE & SOUVENIRS</p>
+        <h2>Retour sur nos <em>derniers événements</em></h2>
+      </div>
+      <div class="events-slider-wrap">
+        <div class="events-slider">
+          <div class="event-slide active" id="event-slide-0">
+            <div class="event-img-box">
+              <img src="Photos RLE/evenement_oser_briller.jpg" alt="Conférence Oser Briller" id="event-img-0"/>
+              <div class="event-img-overlay">
+                <span class="event-tag">CONFÉRENCE OSER BRILLER</span>
+              </div>
+            </div>
+          </div>
+          <div class="event-slide" id="event-slide-1">
+            <div class="event-img-box">
+              <img src="Photos RLE/evenement_immobilier.jpg" alt="Atelier Immobilier" id="event-img-1"/>
+              <div class="event-img-overlay">
+                <span class="event-tag">IMMOBILIER : PASSEZ AU PROCHAIN NIVEAU</span>
+              </div>
+            </div>
+          </div>
+          <div class="event-slide" id="event-slide-2">
+            <div class="event-img-box">
+              <img src="Photos RLE/evenement_femmes.jpg" alt="Femmes au cœur du changement" id="event-img-2"/>
+              <div class="event-img-overlay">
+                <span class="event-tag">FEMMES AU CŒUR DU CHANGEMENT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="events-nav">
+          <button class="arrow-btn dark-arrow" onclick="prevEventSlide()">&#8249;</button>
+          <div class="events-dots" id="events-dots">
+            <span class="dot active" onclick="setEventSlide(0)"></span>
+            <span class="dot" onclick="setEventSlide(1)"></span>
+            <span class="dot" onclick="setEventSlide(2)"></span>
+          </div>
+          <button class="arrow-btn dark-arrow" onclick="nextEventSlide()">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="values-home dark-values">
     <div style="max-width:56rem;margin:0 auto">
       <p class="eyebrow">L'Âme du Réseau</p>
