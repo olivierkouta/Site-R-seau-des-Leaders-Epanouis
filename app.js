@@ -379,22 +379,22 @@ function homeHTML() {
         <div class="edition1-slider">
           <div class="ed1-slide active" id="ed1-slide-0">
             <div class="ed1-img-box">
-              <img src="Image conférence 1/photo_2_2026-09-08_18-44-34.jpg" alt="Moment fort de la 1re édition Oser Briller" />
+              <img src="Image conférence 1/photo_panel_salle.jpg" alt="Vue d'ensemble de la salle et du panel de la 1re édition Oser Briller" />
             </div>
           </div>
           <div class="ed1-slide" id="ed1-slide-1">
             <div class="ed1-img-box">
-              <img src="Image conférence 1/photo_5_2026-09-07_17-10-34.jpg" alt="Présentation sur scène" />
+              <img src="Image conférence 1/photo_2_2026-09-08_18-44-34.jpg" alt="Moment fort de la 1re édition Oser Briller" />
             </div>
           </div>
           <div class="ed1-slide" id="ed1-slide-2">
             <div class="ed1-img-box">
-              <img src="Image conférence 1/photo_7_2026-09-07_17-10-34.jpg" alt="Intervention inspirante" />
+              <img src="Image conférence 1/photo_5_2026-09-07_17-10-34.jpg" alt="Présentation sur scène" />
             </div>
           </div>
           <div class="ed1-slide" id="ed1-slide-3">
             <div class="ed1-img-box">
-              <img src="Image conférence 1/photo_8_2026-09-07_17-10-34.jpg" alt="Public attentif et passionné" />
+              <img src="Image conférence 1/photo_7_2026-09-07_17-10-34.jpg" alt="Intervention inspirante" />
             </div>
           </div>
           <div class="ed1-slide" id="ed1-slide-4">
