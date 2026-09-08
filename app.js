@@ -316,43 +316,23 @@ function homeHTML() {
       <p class="partners-eyebrow">MERCI À NOS PARTENAIRES POUR LEUR PRÉCIEUX SOUTIEN</p>
       <div class="partners-grid">
         <a href="https://www.desjardins.com/on/fr/nous-trouver/caisse-desjardins-ontario/ottawa-cyrville.html" target="_blank" rel="noopener" class="partner-card" title="Desjardins">
-          <svg class="partner-logo-svg" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="12,6 22,11 22,23 12,28 2,23 2,11" fill="#00874E" />
-            <polygon points="12,10 18,13 18,21 12,24 6,21 6,13" fill="#FFFFFF" />
-            <polygon points="12,13 15,15 15,19 12,20 9,19 9,15" fill="#00874E" />
-            <text x="32" y="23" fill="#FFFFFF" font-family="'Montserrat', 'Arial', sans-serif" font-weight="700" font-size="15" letter-spacing="0.5">Desjardins</text>
-          </svg>
+          <img src="logo/official_desjardins.png" alt="Desjardins" class="partner-logo-img" />
         </a>
 
         <a href="https://rga.ca/" target="_blank" rel="noopener" class="partner-card" title="RGA - Regroupement des gens d'affaires">
-          <svg class="partner-logo-svg" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="5" y="25" fill="#FFFFFF" font-family="'Montserrat', 'Arial', sans-serif" font-weight="900" font-size="20" letter-spacing="1">RGA</text>
-            <text x="58" y="15" fill="rgba(255,255,255,0.85)" font-family="'Arial', sans-serif" font-size="6.5" font-weight="700">REGROUPEMENT</text>
-            <text x="58" y="22" fill="rgba(255,255,255,0.7)" font-family="'Arial', sans-serif" font-size="5.5">DES GENS D'AFFAIRES</text>
-            <text x="58" y="28" fill="rgba(255,255,255,0.5)" font-family="'Arial', sans-serif" font-size="4.5">CAPITALE NATIONALE</text>
-          </svg>
+          <img src="logo/official_rga.png" alt="RGA" class="partner-logo-img" />
         </a>
 
         <a href="https://www.lecle.com/" target="_blank" rel="noopener" class="partner-card" title="CLÉ - Centre de leadership et d'évaluation">
-          <svg class="partner-logo-svg" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10,24 C10,14 20,10 22,10 C22,20 12,24 10,24 Z" fill="#00874E" />
-            <path d="M12,24 C16,20 20,24 26,16" stroke="#00874E" stroke-width="2" fill="none" />
-            <text x="32" y="25" fill="#00874E" font-family="'Montserrat', 'Arial', sans-serif" font-weight="800" font-size="18" letter-spacing="2">CLÉ</text>
-          </svg>
+          <img src="logo/official_cle.png" alt="CLÉ" class="partner-logo-img" />
         </a>
 
         <a href="https://www.optionfemmes.ca/" target="_blank" rel="noopener" class="partner-card" title="Option Femmes">
-          <div class="option-femmes-box">
-            <span class="of-top">OPTION</span>
-            <span class="of-bot">FEMMES</span>
-          </div>
+          <img src="logo/official_option_femmes.png" alt="Option Femmes" class="partner-logo-img" />
         </a>
 
         <a href="https://www.collegelacite.ca/" target="_blank" rel="noopener" class="partner-card" title="La Cité">
-          <div class="la-cite-box">
-            <span class="lc-text">LA CITÉ</span>
-            <span class="lc-dot"></span>
-          </div>
+          <img src="logo/official_la_cite.png" alt="La Cité" class="partner-logo-img" />
         </a>
       </div>
     </div>

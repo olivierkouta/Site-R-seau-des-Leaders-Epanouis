@@ -696,10 +696,18 @@ select option { color: #0A0A0A; }
   opacity: 1;
   transform: translateY(-2px);
 }
-.partner-logo-svg {
-  height: 32px;
+.partner-logo-svg,
+.partner-logo-img {
+  height: 36px;
   width: auto;
-  max-width: 140px;
+  max-width: 150px;
+  object-fit: contain;
+  filter: brightness(0.95);
+  transition: all .3s ease;
+}
+.partner-card:hover .partner-logo-img {
+  filter: brightness(1.1);
+  transform: scale(1.05);
 }
 .option-femmes-box {
   border: 1px solid rgba(255, 255, 255, 0.85);
