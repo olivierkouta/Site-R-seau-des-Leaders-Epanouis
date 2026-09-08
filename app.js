@@ -4,12 +4,11 @@ const team = [
     id: "christian", name: "Christian Mwamba",
     role: "Président et Cofondateur",
     org: "Fulfilled Leaders Network (FLN) / Réseau des Leaders Épanouis (RLE)",
-    desc: "Christian Mwamba est le visionnaire à l'origine de la création du réseau. Bâtisseur de leaders et catalyseur de transformation, il œuvre à former une génération de leaders conscients, audacieux et engagés, capables d'avoir un impact durable au sein de leurs communautés et des institutions. Convaincu que le leadership est avant tout un état d'esprit, il s'engage à créer des initiatives structurées qui favorisent le développement stratégique et l'engagement communautaire. Son approche repose sur la rigueur et une vision claire orientée vers la croissance durable. Bilingue et expert en gestion de projets, il incarne un leadership fondé sur l'intégrité, l'excellence et le service.",
+    desc: "Christian Mwamba est le visionnaire à l'origine de la création du réseau. Bâtisseur de leaders et catalyseur de transformation, il œuvre à former une génération de leaders conscients, audacieux et engagés, capables d'avoir un impact durable au sein de leurs communautés et des institutions. Convaincu que le leadership is avant tout un état d'esprit, il s'engage à créer des initiatives structurées qui favorisent le développement stratégique et l'engagement communautaire. Son approche repose sur la rigueur et une vision claire orientée vers la croissance durable. Bilingue et expert en gestion de projets, il incarne un leadership fondé sur l'intégrité, l'excellence et le service.",
     img: "Photos RLE/Christian Final.jpg",
     isPortrait: true,
     theme: "dark"
   },
-
   {
     id: "tensia", name: "Tensia Molisho",
     role: "Directrice Financière et Co-fondatrice",
@@ -334,6 +333,58 @@ function homeHTML() {
         <a href="https://www.collegelacite.ca/" target="_blank" rel="noopener" class="partner-card" title="La Cité">
           <img src="logo/official_la_cite.png" alt="La Cité" class="partner-logo-img" />
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION RETOUR SUR LA 1RE ÉDITION (FOND BLANC) -->
+  <section class="edition1-recap">
+    <div class="edition1-inner">
+      <div class="edition1-header">
+        <p class="edition1-eyebrow">RETOUR SUR NOTRE HISTOIRE • 1ʳᵉ ÉDITION</p>
+        <h2 class="edition1-title">Un Succès Mémorable qui a <em>Tout Initié</em></h2>
+        <p class="edition1-desc">
+          La première édition de la conférence <strong>Oser Briller</strong> a posé les fondations de notre mouvement. Un rassemblement vibrant dédié à l'émancipation, au partage d'expériences inspirantes et au renforcement des liens de notre communauté.
+        </p>
+      </div>
+
+      <div class="edition1-stats">
+        <div class="stat-card">
+          <span class="stat-icon">👥</span>
+          <h3 class="stat-number">150+</h3>
+          <p class="stat-label">Participants Engagés</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">🎤</span>
+          <h3 class="stat-number">5</h3>
+          <p class="stat-label">Intervenants D'Exception</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">🤝</span>
+          <h3 class="stat-number">100%</h3>
+          <p class="stat-label">Connexions & Synergies</p>
+        </div>
+      </div>
+
+      <div class="edition1-gallery">
+        <div class="gallery-item large">
+          <img src="Image conférence 1/photo_2_2026-09-08_18-44-34.jpg" alt="Moment fort de la 1re édition Oser Briller" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="Image conférence 1/photo_5_2026-09-07_17-10-34.jpg" alt="Présentation sur scène" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="Image conférence 1/photo_7_2026-09-07_17-10-34.jpg" alt="Intervention inspirante" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="Image conférence 1/photo_8_2026-09-07_17-10-34.jpg" alt="Public attentif et passionné" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="Image conférence 1/photo_6_2026-09-07_17-10-34.jpg" alt="Échanges et réseautage" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="Image conférence 1/photo_3_2026-09-08_18-44-34.jpg" alt="Clôture de la 1re édition" loading="lazy" />
+        </div>
       </div>
     </div>
   </section>
@@ -686,6 +737,51 @@ function submitDonation(e) {
     </div>`;
 }
 
+// ========= LEGAL =========
+function legalHTML() {
+  return `<div class="view">
+  <section class="page-hero" style="background:#0A0A0A;color:#fff;padding:6rem 2rem 4rem;text-align:center;">
+    <div class="page-hero-inner" style="max-width:800px;margin:0 auto;">
+      <p class="page-eyebrow" style="color:#B38B59;letter-spacing:.3em;text-transform:uppercase;font-weight:600;font-size:.8rem;margin-bottom:1rem;">Information Réglementaire</p>
+      <h1 class="page-title" style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,3.5rem);font-weight:700;">Mentions <em style="color:#B38B59;font-style:italic;">Légales.</em></h1>
+    </div>
+  </section>
+
+  <section class="legal-section" style="padding: 5rem 2rem; background: #FFFFFF; color: #0A0A0A;">
+    <div style="max-width: 900px; margin: 0 auto; line-height: 1.8; font-size: 1rem;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 1rem;">1. Éditeur du site</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        Le site internet <strong>www.rlefln.com</strong> est édité et géré par le <strong>Réseau des Leaders Épanouis (RLE) / Fulfilled Leaders Network (FLN)</strong>, une organisation basée à Ottawa, Ontario, Canada.<br/>
+        <strong>Courriel de contact :</strong> <a href="mailto:Contact@rlefln.com" style="color: #B38B59; text-decoration: underline; font-weight: 600;">Contact@rlefln.com</a>
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">2. Propriété intellectuelle</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        L'ensemble des éléments constituant ce site (textes, visuels, photographies, logos, charte graphique, architecture) sont la propriété exclusive du Réseau des Leaders Épanouis (RLE), sauf mention contraire explicite.<br/>
+        Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site est strictly interdite sans l'autorisation écrite préalable du Réseau des Leaders Épanouis.
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">3. Protection des données personnelles & Confidentialité</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        Le Réseau des Leaders Épanouis s'engage à préserver la confidentialité des informations fournies en ligne par l'utilisateur. Les données personnelles transmises via nos formulaires (contact, abonnement, dons) sont destinées exclusivement au traitement interne de vos demandes.<br/>
+        Conformément aux lois canadiennes sur la protection des renseignements personnels, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Pour exercer ce droit, adressez votre demande à <a href="mailto:Contact@rlefln.com" style="color: #B38B59; text-decoration: underline; font-weight: 600;">Contact@rlefln.com</a>.
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">4. Limitation de responsabilité</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        Le Réseau des Leaders Épanouis met tout en œuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur le site. Toutefois, le RLE ne peut être tenu responsable des omissions, inexactitudes ou retards de mise à jour.<br/>
+        Le site peut inclure des hyperliens vers d'autres sites externes. Le RLE n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu ou leurs pratiques.
+      </p>
+
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">5. Droit applicable</h2>
+      <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
+        Les présentes mentions légales sont régies et interprétées conformément aux lois en vigueur dans la province d'Ontario et aux lois fédérales du Canada qui s'y appliquent.
+      </p>
+    </div>
+  </section>
+</div>`;
+}
+
 // ========= PRIVACY =========
 function privacyHTML() {
   return `<div class="view">
@@ -732,7 +828,7 @@ function privacyHTML() {
       <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">3. Partage et protection des données</h2>
       <p style="margin-bottom: 1.5rem; color: rgba(0,0,0,0.75);">
         <strong>Aucune commercialisation :</strong> Le Réseau des Leaders Épanouis ne vend, ne loue, ne troque et ne partage <strong>jamais</strong> vos données personnelles avec des tiers à des fins commerciales ou publicitaires.<br/><br/>
-        <strong>Accès restreint & Sécurité :</strong> L'accès à vos informations est strictement réservé aux membres autorisés de l'équipe du RLE. Nous mettons en œuvre des mesures de sécurité physiques, électroniques et organisationnelles adéquates pour prévenir tout accès non autorisé, perte ou divulgation.
+        <strong>Accès restreint & Sécurité :</strong> L'accès à vos informations est strictly réservé aux membres autorisés de l'équipe du RLE. Nous mettons en œuvre des mesures de sécurité physiques, électroniques et organisationnelles adéquates pour prévenir tout accès non autorisé, perte ou divulgation.
       </p>
 
       <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #B38B59; margin-bottom: 1rem; margin-top: 2.5rem;">4. Vos droits</h2>

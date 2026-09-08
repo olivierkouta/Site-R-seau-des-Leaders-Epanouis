@@ -774,3 +774,152 @@ select option { color: #0A0A0A; }
     max-width: 120px;
   }
 }
+
+/* -------------------------------------------------------------
+   SECTION RETOUR SUR LA 1RE ÉDITION (FOND BLANC #FFFFFF)
+------------------------------------------------------------- */
+.edition1-recap {
+  background: #FFFFFF;
+  color: #0A0A0A;
+  padding: 6rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.edition1-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.edition1-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 4rem auto;
+}
+.edition1-eyebrow {
+  color: #B38B59;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.edition1-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 700;
+  color: #0A0A0A;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+.edition1-title em {
+  color: #B38B59;
+  font-style: italic;
+}
+.edition1-desc {
+  color: #4A4A4A;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* Stats Cards */
+.edition1-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.stat-card {
+  background: #FDFCF7;
+  border: 1px solid rgba(179, 139, 89, 0.25);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(179, 139, 89, 0.12);
+  border-color: #B38B59;
+}
+.stat-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #0A0A0A;
+  margin-bottom: 0.3rem;
+  line-height: 1;
+}
+.stat-label {
+  color: #666666;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Photo Gallery Grid */
+.edition1-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.gallery-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  height: 280px;
+}
+.gallery-item.large {
+  grid-column: span 2;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .edition1-recap {
+    padding: 4rem 1.5rem;
+  }
+  .edition1-stats {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  .edition1-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .gallery-item.large {
+    grid-column: span 2;
+  }
+  .gallery-item {
+    height: 220px;
+  }
+}
+
+@media (max-width: 580px) {
+  .edition1-gallery {
+    grid-template-columns: 1fr;
+  }
+  .gallery-item.large {
+    grid-column: span 1;
+  }
+  .gallery-item {
+    height: 240px;
+  }
+}
+
