@@ -384,7 +384,7 @@ function homeHTML() {
           </div>
           <div class="ed1-slide" id="ed1-slide-1">
             <div class="ed1-img-box">
-              <img src="Image conférence 1/photo_2_2026-09-08_18-44-34.jpg" alt="Moment fort de la 1re édition Oser Briller" />
+              <img src="Image conférence 1/photo_1_2026-09-08_18-44-34.jpg" alt="Intervenants de la 1re édition" />
             </div>
           </div>
           <div class="ed1-slide" id="ed1-slide-2">
