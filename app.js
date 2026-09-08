@@ -209,7 +209,7 @@ function renderEventSlide() {
 
 // ========= EDITION 1 CAROUSEL =========
 let currentEdition1Slide = 0;
-const edition1PhotosCount = 6;
+const edition1PhotosCount = 5;
 
 function prevEdition1Slide() {
   currentEdition1Slide = (currentEdition1Slide - 1 + edition1PhotosCount) % edition1PhotosCount;
@@ -389,20 +389,15 @@ function homeHTML() {
           </div>
           <div class="ed1-slide" id="ed1-slide-2">
             <div class="ed1-img-box">
-              <img src="Image conférence 1/photo_5_2026-09-07_17-10-34.jpg" alt="Présentation sur scène" />
+              <img src="Image conférence 1/photo_7_2026-09-07_17-10-34.jpg" alt="Intervention inspirante" />
             </div>
           </div>
           <div class="ed1-slide" id="ed1-slide-3">
             <div class="ed1-img-box">
-              <img src="Image conférence 1/photo_7_2026-09-07_17-10-34.jpg" alt="Intervention inspirante" />
-            </div>
-          </div>
-          <div class="ed1-slide" id="ed1-slide-4">
-            <div class="ed1-img-box">
               <img src="Image conférence 1/photo_6_2026-09-07_17-10-34.jpg" alt="Échanges et réseautage" />
             </div>
           </div>
-          <div class="ed1-slide" id="ed1-slide-5">
+          <div class="ed1-slide" id="ed1-slide-4">
             <div class="ed1-img-box">
               <img src="Image conférence 1/photo_3_2026-09-08_18-44-34.jpg" alt="Clôture de la 1re édition" />
             </div>
@@ -417,7 +412,6 @@ function homeHTML() {
             <span class="dot" onclick="setEdition1Slide(2)"></span>
             <span class="dot" onclick="setEdition1Slide(3)"></span>
             <span class="dot" onclick="setEdition1Slide(4)"></span>
-            <span class="dot" onclick="setEdition1Slide(5)"></span>
           </div>
           <button class="arrow-btn dark-arrow" onclick="nextEdition1Slide()">&#8250;</button>
         </div>
