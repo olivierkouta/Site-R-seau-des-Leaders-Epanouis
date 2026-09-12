@@ -542,7 +542,7 @@ function aboutHTML() {
     <div class="about-vision-inner">
       <div style="color:#B38B59;font-size:2rem">👁</div>
       <h2>Vision</h2>
-      <blockquote>"Notre vision est de promouvoir une culture du leadership capable de façonner et d’influencer positivement la société grâce à la connaissance, à la sagesse et à la passion des individus."</blockquote>
+      <blockquote>"Promouvoir une culture du leadership capable de façonner et d’influencer positivement la société grâce à la connaissance, à la sagesse et à la passion des individus."</blockquote>
     </div>
   </section>
 
