@@ -336,30 +336,44 @@ function homeHTML() {
     </div>
   </section>
 
-  <!-- SECTION PARTENAIRES DE CONFIANCE -->
+  <!-- SECTION PARTENAIRES DE CONFIANCE (TIERS PLATINE & OR) -->
   <section class="partners-section">
     <div class="partners-inner">
-      <p class="partners-eyebrow">MERCI À NOS PARTENAIRES POUR LEUR PRÉCIEUX SOUTIEN</p>
-      <div class="partners-grid">
-        <a href="https://www.desjardins.com/on/fr/nous-trouver/caisse-desjardins-ontario/ottawa-cyrville.html" target="_blank" rel="noopener" class="partner-card" title="Desjardins">
-          <img src="logo/official_desjardins.png" alt="Desjardins" class="partner-logo-img" />
-        </a>
+      <p class="partners-main-title">MERCI À NOS PARTENAIRES POUR LEUR PRÉCIEUX SOUTIEN</p>
+      
+      <!-- NIVEAU PLATINE -->
+      <div class="partner-tier tier-platine">
+        <span class="tier-label label-platine">PARTENAIRE PLATINE</span>
+        <div class="partners-grid-platine">
+          <a href="https://www.desjardins.com/on/fr/nous-trouver/caisse-desjardins-ontario/ottawa-cyrville.html" target="_blank" rel="noopener" class="partner-card partner-platine-card" title="Desjardins - Partenaire Platine">
+            <img src="logo/official_desjardins.png" alt="Desjardins" class="partner-logo-img platine-logo" />
+          </a>
+        </div>
+      </div>
 
-        <a href="https://rga.ca/" target="_blank" rel="noopener" class="partner-card" title="RGA - Regroupement des gens d'affaires">
-          <img src="logo/official_rga.png" alt="RGA" class="partner-logo-img" />
-        </a>
+      <!-- SEPARATEUR DISCRET -->
+      <div class="partner-tier-divider"></div>
 
-        <a href="https://www.lecle.com/" target="_blank" rel="noopener" class="partner-card" title="CLÉ - Centre de leadership et d'évaluation">
-          <img src="logo/official_cle.png" alt="CLÉ" class="partner-logo-img" />
-        </a>
+      <!-- NIVEAU OR -->
+      <div class="partner-tier tier-or">
+        <span class="tier-label label-or">PARTENAIRES OR</span>
+        <div class="partners-grid-or">
+          <a href="https://rga.ca/" target="_blank" rel="noopener" class="partner-card" title="RGA - Regroupement des gens d'affaires">
+            <img src="logo/official_rga.png" alt="RGA" class="partner-logo-img" />
+          </a>
 
-        <a href="https://www.optionfemmes.ca/" target="_blank" rel="noopener" class="partner-card" title="Option Femmes">
-          <img src="logo/official_option_femmes.png" alt="Option Femmes" class="partner-logo-img" />
-        </a>
+          <a href="https://www.lecle.com/" target="_blank" rel="noopener" class="partner-card" title="CLÉ - Centre de leadership et d'évaluation">
+            <img src="logo/official_cle.png" alt="CLÉ" class="partner-logo-img" />
+          </a>
 
-        <a href="https://www.collegelacite.ca/" target="_blank" rel="noopener" class="partner-card" title="La Cité">
-          <img src="logo/official_la_cite.png" alt="La Cité" class="partner-logo-img" />
-        </a>
+          <a href="https://www.optionfemmes.ca/" target="_blank" rel="noopener" class="partner-card" title="Option Femmes">
+            <img src="logo/official_option_femmes.png" alt="Option Femmes" class="partner-logo-img" />
+          </a>
+
+          <a href="https://www.collegelacite.ca/" target="_blank" rel="noopener" class="partner-card" title="La Cité">
+            <img src="logo/official_la_cite.png" alt="La Cité" class="partner-logo-img" />
+          </a>
+        </div>
       </div>
     </div>
   </section>
